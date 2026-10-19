@@ -1,0 +1,183 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #263238;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #123765;
+    color: white;
+    padding: 24px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-header p {
+    margin: 4px 0 16px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main.container {
+    min-height: 65vh;
+    padding-top: 28px;
+    padding-bottom: 35px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button,
+.btn {
+    display: inline-block;
+    padding: 11px 18px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #1769aa;
+    color: white;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background: #104e80;
+}
+
+.alert {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background: #e8f2ff;
+}
+
+.site-footer {
+    background: #e5eaf0;
+    text-align: center;
+    padding: 18px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dce2e8;
+}
+
+th {
+    background: #eaf0f7;
+}
+
+tr:hover {
+    background: #f7f9fc;
+}
+
+/* Header layout: branding left, navigation right */
+.site-header .header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.site-header .header-brand h1 {
+    margin: 0;
+}
+
+.site-header .header-brand p {
+    margin: 5px 0 0;
+}
+
+.site-header .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.site-header .header-nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Keep the header neat on mobile screens */
+@media (max-width: 600px) {
+    .site-header .header-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-header .header-nav {
+        justify-content: flex-start;
+        margin-left: 0;
+        gap: 8px;
+    }
+}
